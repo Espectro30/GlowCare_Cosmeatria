@@ -58,8 +58,10 @@ export default function AdminDashboard() {
       <div className="max-w-7xl mx-auto">
 
         {/* HEADER DEL PANEL */}
-        <header className="mb-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 bg-brand-900 p-8 rounded-[3rem] shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-brand-500 opacity-10 rounded-full -mr-20 -mt-20 blur-3xl" />
+        <header className="mb-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 bg-brand-900 p-8 rounded-[3rem] shadow-2xl relative">
+          <div className="absolute inset-0 overflow-hidden rounded-[3rem] pointer-events-none">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-500 opacity-10 rounded-full -mr-20 -mt-20 blur-3xl" />
+          </div>
           <div className="z-10">
             <h1 className="text-4xl font-black text-white flex items-center gap-4 tracking-tighter">
               <LayoutDashboard className="w-12 h-12 text-brand-400" /> Panel Maestro <span className="text-brand-400">GlowCare</span>
@@ -73,36 +75,6 @@ export default function AdminDashboard() {
             >
               <UserPlus className="w-6 h-6" /> Registrar Staff
             </button>
-            {/* BOTON NOTIFICACIONES */}
-            <button
-              onClick={() => setShowNotifications(!showNotifications)}
-              className="bg-brand-800 p-4 rounded-2xl text-white relative hover:bg-brand-700 transition-all"
-            >
-              <Bell className="w-6 h-6" />
-              <span className="absolute top-3 right-3 w-3 h-3 bg-red-500 rounded-full border-2 border-brand-800 animate-pulse" />
-            </button>
-            {/* DROPDOWN NOTIFICACIONES */}
-            {showNotifications && (
-              <div className="absolute top-full right-0 mt-3 w-80 bg-white rounded-3xl shadow-2xl border border-brand-50 p-6 z-50 animate-in fade-in slide-in-from-top-5 duration-200">
-                <div className="flex justify-between items-center mb-4">
-                  <h4 className="font-black text-brand-950 text-sm uppercase tracking-widest">Actividad Reciente</h4>
-                  <button onClick={() => setShowNotifications(false)} className="text-brand-300 hover:text-brand-700">
-                    <X className="w-4 h-4" />
-                  </button>
-                </div>
-                <div className="space-y-4">
-                  {activityLogs.map((log, i) => (
-                    <div key={i} className="flex items-start gap-3 p-3 bg-brand-50 rounded-2xl">
-                      <span className={`w-2.5 h-2.5 ${log.color} rounded-full mt-1.5 flex-shrink-0`} />
-                      <div>
-                        <p className="text-sm font-bold text-brand-950">{log.text}</p>
-                        <p className="text-[10px] text-brand-400 font-black uppercase mt-0.5">{log.time}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
         </header>
 
