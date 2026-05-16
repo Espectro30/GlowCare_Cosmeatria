@@ -1,6 +1,6 @@
-# 🚀 Guía para Miguel — Cómo Correr GlowCare v2.2.0 desde Cero
+# 🚀 Guía para Miguel — Cómo Correr GlowCare v2.3.0 desde Cero
 
-¡Hola Miguel! Este documento es tu mapa para levantar el proyecto GlowCare en tu PC sin dramas. Está actualizado a la versión **v2.2.0** con todos los cambios más recientes.
+¡Hola Miguel! Este documento es tu mapa para levantar el proyecto GlowCare en tu PC sin dramas. Está actualizado a la versión **v2.3.0** con todos los cambios más recientes.
 
 ---
 
@@ -74,16 +74,13 @@ Para los accesos por defecto (Admin, Cosmiatra, Paciente), revisa el archivo [Cr
 
 ---
 
-## 🆕 ¿Qué cambió en v2.2.0?
+## 🆕 ¿Qué cambió en v2.3.0?
 
-- **Navbar** rediseñado: fondo blanco, textos y botones con contraste correcto.
-- **Registro en 2 pasos**: después de crear cuenta, el paciente llena sus datos clínicos (alergias, tratamientos previos, fototipo de piel, etc.).
-- **Perfil editable**: cualquier usuario puede editar su foto, nombre, teléfono y descripción.
-- **Pago**: la referencia es solo 4 dígitos y los inputs ya no pierden el foco al escribir.
-- **Admin**: al crear una cosmiatra, se puede definir o generar su contraseña y el sistema la muestra para entregársela.
-- **ServiceDetail**: descripción completa con beneficios, cuidados post-tratamiento e imagen correcta en Drenaje Linfático.
-- **Encoding**: textos con caracteres especiales corregidos (Gestión, Clínica, Técnico, etc.).
-- **Notificaciones**: el botón de campana en el Admin ahora abre un panel de actividad reciente.
+- **Arquitectura de Citas**: Se migró de citas simples a un sistema de **Bloques de Horario (Slots)** asignados por la cosmiatra, evitando conflictos de agenda.
+- **Credenciales Centralizadas**: Toda la documentación ahora apunta a `Credenciales.md` por seguridad.
+- **Flujo de Pago**: Se arregló un bug crítico donde el campo de número telefónico y referencia perdía el foco al escribir en móviles.
+- **UI AdminDashboard**: Se resolvió un problema de CSS (`overflow-hidden`) que cortaba la campana de notificaciones y se eliminó redundancia visual de la actividad.
+- **Base de Datos**: Se actualizó `seed_db.py` para forzar la creación correcta de los 3 perfiles principales (Miguel, Ellen y Angel).
 
 ---
 

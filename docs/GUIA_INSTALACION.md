@@ -1,4 +1,4 @@
-# 🗺️ Guía de Instalación Maestra — GlowCare v2.2.0
+# 🗺️ Guía de Instalación Maestra — GlowCare v2.3.0
 
 Esta guía documenta paso a paso cómo desplegar el ecosistema **GlowCare** en una PC desde cero, tanto con Docker como de forma manual, asegurando un entorno funcional y seguro.
 
@@ -141,4 +141,4 @@ python seed_db.py
 
 ---
 
-*GlowCare v2.2.0 — Desarrollado por Angel & Miguel | Lenguaje de Programación 2*
+*GlowCare v2.3.0 — Desarrollado por Angel & Miguel | Lenguaje de Programación 2*

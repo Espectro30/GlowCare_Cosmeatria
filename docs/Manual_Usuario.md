@@ -1,4 +1,4 @@
-# Manual de Usuario — Plataforma GlowCare v2.2.0
+# Manual de Usuario — Plataforma GlowCare v2.3.0
 
 Bienvenido/a al Manual Oficial de GlowCare, la plataforma de gestión clínica para cosmiatría profesional. Este documento guía a pacientes, cosmiatras y administradores en el uso del sistema.
 
@@ -22,7 +22,7 @@ Bienvenido/a al Manual Oficial de GlowCare, la plataforma de gestión clínica p
    - Contraseña (mínimo 6 caracteres)
 3. Hacer clic en **"Continuar"**
 
-### 2. Registro — Paso 2: Datos Clínicos *(nuevo en v2.2.0)*
+### 2. Registro — Paso 2: Datos Clínicos *(nuevo en v2.3.0)*
 Antes de completar el registro, el sistema solicita información médica confidencial para personalizar los tratamientos:
 
 | Campo | Descripción |
@@ -67,7 +67,7 @@ Antes de completar el registro, el sistema solicita información médica confide
 1. Ir al navbar → **"Mis Citas"** o navegar a `/mi-calendario`
 2. Ver el historial de citas con su estado actual
 
-### 7. Editar Mi Perfil *(nuevo en v2.2.0)*
+### 7. Editar Mi Perfil *(nuevo en v2.3.0)*
 1. Ir al navbar → **"Perfil"** o navegar a `/perfil`
 2. Hacer clic en **"Editar Perfil"** (botón en la tarjeta)
 3. Editar:
@@ -122,7 +122,7 @@ El header del panel muestra 4 indicadores en tiempo real:
 - Buscar por nombre en el campo de búsqueda (funcionalidad en desarrollo)
 - Hacer clic en **"Auditar Perfil"** para acceder al historial clínico
 
-### 4. Registrar Nueva Cosmiatra *(actualizado en v2.2.0)*
+### 4. Registrar Nueva Cosmiatra *(actualizado en v2.3.0)*
 1. Hacer clic en **"Registrar Staff"**
 2. Completar el formulario:
    - Nombre Completo
@@ -132,7 +132,7 @@ El header del panel muestra 4 indicadores en tiempo real:
 3. Hacer clic en **"Registrar en GlowCare"**
 4. El sistema muestra las credenciales para entregárselas a la especialista.
 
-### 5. Notificaciones *(nuevo en v2.2.0)*
+### 5. Notificaciones *(nuevo en v2.3.0)*
 - Hacer clic en el ícono de **campana** (🔔) en el header del panel
 - Se abre un dropdown con los últimos eventos del sistema:
   - Respaldos automáticos
@@ -161,4 +161,4 @@ El header del panel muestra 4 indicadores en tiempo real:
 
 ---
 
-*GlowCare v2.2.0 — Documento de uso interno y evaluación académica*
+*GlowCare v2.3.0 — Documento de uso interno y evaluación académica*

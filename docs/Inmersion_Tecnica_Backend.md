@@ -1,4 +1,4 @@
-# Inmersión Técnica — Backend GlowCare v2.2.0
+# Inmersión Técnica — Backend GlowCare v2.3.0
 
 Documentación interna del servidor de GlowCare, diseñado bajo **Separación de Responsabilidades (SoC)**, **Clean Architecture** y estándares de seguridad **OWASP**.
 
@@ -37,7 +37,7 @@ role = getattr(request.user, 'profile', None)
 user_role = role.role if role else 'cliente'
 ```
 
-**v2.2.0 — Nuevos comportamientos:**
+**v2.3.0 — Nuevos comportamientos:**
 - `POST /register/` acepta `clinical_data` (JSON de historial clínico) y lo guarda en `ClientProfile.address`.
 - `PATCH /me/` permite actualizar `first_name`, `phone` y `bio`.
 - `POST /cosmiatras/` acepta `password` opcional; si no se envía, genera una contraseña segura con `secrets.token_urlsafe(6)` y la devuelve en la respuesta.
@@ -187,4 +187,4 @@ python seed_db.py
 
 ---
 
-*GlowCare Backend v2.2.0 — Rendimiento, Seguridad y Orden.*
+*GlowCare Backend v2.3.0 — Rendimiento, Seguridad y Orden.*

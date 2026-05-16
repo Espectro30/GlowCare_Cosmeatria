@@ -1,4 +1,4 @@
-# Plan de Pruebas y Validación (QA) — GlowCare v2.2.0
+# Plan de Pruebas y Validación (QA) — GlowCare v2.3.0
 
 Este documento es la bitácora de verificación funcional del sistema. Sirve para que el evaluador, el equipo de desarrollo o un tester externo pueda confirmar la integridad y robustez de la plataforma.
 
@@ -140,4 +140,4 @@ Este documento es la bitácora de verificación funcional del sistema. Sirve par
 
 ---
 
-*GlowCare QA v2.2.0 — Calidad certificada para presentación académica*
+*GlowCare QA v2.3.0 — Calidad certificada para presentación académica*

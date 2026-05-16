@@ -1,4 +1,4 @@
-# Inmersión Técnica — Frontend GlowCare v2.2.0
+# Inmersión Técnica — Frontend GlowCare v2.3.0
 
 Documentación del cliente web construido con **React 19**, **Vite 8** y **TailwindCSS 3** bajo principios de Inversión de Dependencias (DIP) y Diseño Orientado al Componente.
 
@@ -196,7 +196,7 @@ Login → /admin-dashboard → Modal alta cosmiatra → Ver notificaciones → A
 
 ---
 
-## 8. Fix del Bug de Focus en Inputs Numéricos (v2.2.0)
+## 8. Fix del Bug de Focus en Inputs Numéricos (v2.3.0)
 
 **Problema:** Los inputs de referencia bancaria y teléfono perdían el foco del cursor al tipear cada dígito.
 
@@ -239,4 +239,4 @@ Login → /admin-dashboard → Modal alta cosmiatra → Ver notificaciones → A
 
 ---
 
-*GlowCare Frontend v2.2.0 — Experiencia de usuario premium y arquitectura escalable.*
+*GlowCare Frontend v2.3.0 — Experiencia de usuario premium y arquitectura escalable.*
