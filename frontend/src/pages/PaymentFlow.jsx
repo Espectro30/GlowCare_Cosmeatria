@@ -3,6 +3,26 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { ChevronRight, ChevronLeft, Copy, CheckCircle2, ShieldCheck, Phone, Hash } from 'lucide-react';
 import { appointmentsApi } from '../api/appointments';
 
+/* Layout compartido (extraido para evitar re-renders y perdida de foco) */
+const Wrapper = ({ children, title, hideBack, bookingData, setStep }) => (
+  <div className="min-h-screen bg-brand-950 flex flex-col font-sans animate-in fade-in duration-300">
+    <header className="bg-brand-900 text-white px-6 py-5 flex items-center border-b border-brand-800 shadow-xl sticky top-0 z-10">
+      {!hideBack && (
+        <button onClick={() => setStep('methods')} className="mr-4 p-2 rounded-full hover:bg-brand-800 transition-colors text-brand-400">
+          <ChevronLeft className="w-6 h-6" />
+        </button>
+      )}
+      <div>
+        <p className="text-[10px] font-black text-brand-500 uppercase tracking-widest">{bookingData?.serviceTitle || 'GlowCare'}</p>
+        <h1 className="text-xl font-black tracking-tighter text-white">{title}</h1>
+      </div>
+    </header>
+    <main className="flex-grow flex flex-col p-6 pb-16 max-w-md mx-auto w-full">
+      {children}
+    </main>
+  </div>
+);
+
 export default function PaymentFlow() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -58,30 +78,10 @@ export default function PaymentFlow() {
     }
   };
 
-  /* Layout compartido */
-  const Wrapper = ({ children, title, hideBack }) => (
-    <div className="min-h-screen bg-brand-950 flex flex-col font-sans animate-in fade-in duration-300">
-      <header className="bg-brand-900 text-white px-6 py-5 flex items-center border-b border-brand-800 shadow-xl sticky top-0 z-10">
-        {!hideBack && (
-          <button onClick={() => setStep('methods')} className="mr-4 p-2 rounded-full hover:bg-brand-800 transition-colors text-brand-400">
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-        )}
-        <div>
-          <p className="text-[10px] font-black text-brand-500 uppercase tracking-widest">{bookingData.serviceTitle || 'GlowCare'}</p>
-          <h1 className="text-xl font-black tracking-tighter text-white">{title}</h1>
-        </div>
-      </header>
-      <main className="flex-grow flex flex-col p-6 pb-16 max-w-md mx-auto w-full">
-        {children}
-      </main>
-    </div>
-  );
-
   /* PASO 1: SELECCION DE METODO */
   if (step === 'methods') {
     return (
-      <Wrapper title="Via de Pago" hideBack>
+      <Wrapper bookingData={bookingData} setStep={setStep} title="Via de Pago" hideBack>
         <div className="mt-8 mb-10">
           <h2 className="text-3xl font-black text-white tracking-tighter mb-2">{bookingData.serviceTitle || 'Tu Tratamiento'}</h2>
           <p className="text-brand-400 font-bold">Elige como deseas abonar tu sesion</p>
@@ -140,7 +140,7 @@ export default function PaymentFlow() {
   /* PASO 2: CONFIRMACION DE MONTO */
   if (step === 'info_pago') {
     return (
-      <Wrapper title="Confirmar Monto">
+      <Wrapper bookingData={bookingData} setStep={setStep} title="Confirmar Monto">
         <div className="text-center mt-10 space-y-8">
           <div className="bg-brand-500 w-24 h-24 rounded-[2.5rem] flex items-center justify-center mx-auto shadow-2xl">
             <ShieldCheck className="w-12 h-12 text-white" />
@@ -179,7 +179,7 @@ export default function PaymentFlow() {
       { label: 'Telefono Pago Movil', value: '0412-346-6196', key: 'tel' },
     ];
     return (
-      <Wrapper title="Datos de Transferencia">
+      <Wrapper bookingData={bookingData} setStep={setStep} title="Datos de Transferencia">
         <h2 className="text-2xl font-black text-white mb-6 mt-4 tracking-tighter">Cuentas Receptoras</h2>
 
         <div className="bg-brand-800 rounded-[2.5rem] p-8 space-y-6 border border-brand-700 shadow-xl mb-8">
@@ -220,7 +220,7 @@ export default function PaymentFlow() {
   /* PASO 4: REGISTRO DE REFERENCIA — FIX DEL BUG DE FOCUS */
   if (step === 'input_ref') {
     return (
-      <Wrapper title="Registro de Operacion">
+      <Wrapper bookingData={bookingData} setStep={setStep} title="Registro de Operacion">
         <div className="mt-8 space-y-10">
           <div>
             <h2 className="text-3xl font-black text-white tracking-tighter mb-2">Confirma tu Pago</h2>
@@ -287,7 +287,7 @@ export default function PaymentFlow() {
   /* PASO 5: EXITO */
   if (step === 'success') {
     return (
-      <Wrapper title="Confirmacion" hideBack>
+      <Wrapper bookingData={bookingData} setStep={setStep} title="Confirmacion" hideBack>
         <div className="flex flex-col items-center justify-center h-[75vh] text-center space-y-8 px-4">
           <div className="bg-green-500 w-32 h-32 rounded-full flex items-center justify-center shadow-[0_0_60px_rgba(34,197,94,0.4)] animate-in zoom-in duration-500">
             <CheckCircle2 className="w-16 h-16 text-white" />

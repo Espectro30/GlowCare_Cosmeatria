@@ -70,11 +70,7 @@ Acceso: **http://localhost:3000**
 
 ## 🔑 Usuarios de Prueba
 
-| ¿Quién es? | Correo | Contraseña | ¿Qué puede hacer? |
-|-----------|--------|-----------|------------------|
-| **Admin** | `admin@glowcare.com` | `admin123` | Ver y gestionar todo: pacientes, métricas, registrar cosmiatras con contraseña |
-| **Cosmiatra** | `dra_elena@glowcare.com` | `admin123` | Ver su agenda, crear citas manualmente, ver pacientes |
-| **Paciente** | `paciente@gmail.com` | `admin123` | Explorar servicios, agendar cita, pagar, editar perfil |
+Para los accesos por defecto (Admin, Cosmiatra, Paciente), revisa el archivo [Credenciales.md](./Credenciales.md).
 
 ---
 

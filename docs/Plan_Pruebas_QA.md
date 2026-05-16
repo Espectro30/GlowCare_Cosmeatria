@@ -8,10 +8,10 @@ Este documento es la bitácora de verificación funcional del sistema. Sirve par
 
 | ID | Caso de Prueba | Acción | Resultado Esperado |
 |----|---------------|--------|--------------------|
-| A-01 | Login exitoso — Admin | Ingresar `admin@glowcare.com` / `admin123` | Redirección a Panel Maestro. Token en localStorage |
-| A-02 | Login exitoso — Cosmiatra | Ingresar `dra_elena@glowcare.com` / `admin123` | Redirección a `/agenda-especialista` |
-| A-03 | Login exitoso — Paciente | Ingresar `paciente@gmail.com` / `admin123` | Redirección a `/mi-calendario` |
-| A-04 | Credenciales incorrectas | Correo válido con contraseña errada | Mensaje de error visible, sin redirección |
+| A-01 | Login exitoso — Admin | Ingresar correo de Admin (ver `Credenciales.md`) | Redirección a Panel Maestro. Token en localStorage |
+| A-02 | Login exitoso — Cosmiatra | Ingresar correo de Cosmiatra (ver `Credenciales.md`) | Redirección a `/agenda-especialista` |
+| A-03 | Login exitoso — Paciente | Ingresar correo de Paciente (ver `Credenciales.md`) | Redirección a `/mi-calendario` |
+| A-04 | Login fallido | Ingresar correo no registrado | Mensaje de error visible, sin redirección |
 | A-05 | Persistencia de sesión | Hacer F5 estando logueado | La sesión se mantiene activa |
 | A-06 | Cierre de sesión | Hacer clic en "Salir" | Limpia localStorage y redirige al Home |
 | A-07 | Ruta protegida sin sesión | Intentar acceder a `/admin-dashboard` sin login | Redirección automática al login |

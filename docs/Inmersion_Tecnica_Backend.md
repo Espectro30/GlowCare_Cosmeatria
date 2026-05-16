@@ -173,10 +173,12 @@ DATABASE_URL=sqlite:///db.sqlite3
 ## 5. Auto-Configuración con `seed_db.py`
 
 El script `seed_db.py` en la raíz del backend realiza:
-1. Crear Admin Maestro si no existe (`admin@glowcare.com`)
-2. Crear Cosmiatra demo (`dra_elena@glowcare.com` + perfil Cosmiatra)
-3. Crear Paciente demo (`paciente@gmail.com`)
+1. Crear Admin Maestro si no existe
+2. Crear Cosmiatra demo + perfil Cosmiatra
+3. Crear Paciente demo
 4. Crear los 6 ServicePackages con sus slugs e imágenes
+
+*(Para ver los correos y contraseñas creados, revisa `Credenciales.md`)*
 
 ```bash
 cd backend

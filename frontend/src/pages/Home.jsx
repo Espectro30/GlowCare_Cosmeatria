@@ -97,7 +97,7 @@ export default function Home() {
               Agendar Tratamiento
             </Link>
             {user ? (
-              <Link to={user.role === 'admin' ? '/admin-dashboard' : '/mi-calendario'} className="bg-brand-900/50 text-white px-12 py-5 rounded-[2rem] font-black text-lg hover:bg-brand-900 border border-brand-800 transition-all backdrop-blur-md">
+              <Link to={user.role === 'admin' ? '/admin-dashboard' : user.role === 'cosmiatra' ? '/agenda-especialista' : '/mi-calendario'} className="bg-brand-900/50 text-white px-12 py-5 rounded-[2rem] font-black text-lg hover:bg-brand-900 border border-brand-800 transition-all backdrop-blur-md">
                 Ir a Mi Panel
               </Link>
             ) : (

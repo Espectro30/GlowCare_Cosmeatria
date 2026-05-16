@@ -95,11 +95,7 @@ Acceso: **http://localhost:3000**
 
 ## 🔐 Credenciales de Acceso — Demo
 
-| Rol | Correo | Contraseña | Capacidades principales |
-|-----|--------|-----------|------------------------|
-| **Admin Maestro** | `admin@glowcare.com` | `admin123` | Gestionar staff, ver métricas, registrar cosmiatras con contraseña |
-| **Cosmiatra** | `dra_elena@glowcare.com` | `admin123` | Agenda profesional, crear citas, ver pacientes |
-| **Paciente** | `paciente@gmail.com` | `admin123` | Explorar catálogo, agendar, pagar, ver historial y editar perfil |
+Por favor, consulta el archivo [Credenciales.md](./Credenciales.md) para ver los correos y contraseñas de demostración (Admin, Cosmiatra, Paciente).
 
 ---
 
