@@ -65,7 +65,7 @@ Acceso: **Frontend** → `http://localhost:3000` | **API** → `http://localhost
 
 ---
 
-## ✨ Funcionalidades v3.1.0
+## ✨ Funcionalidades (v3.0.0 y v3.1.0)
 
 ### Módulo Admin
 

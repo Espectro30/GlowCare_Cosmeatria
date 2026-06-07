@@ -37,7 +37,7 @@ role = getattr(request.user, 'profile', None)
 user_role = role.role if role else 'cliente'
 ```
 
-**v3.1.0 — Nuevos comportamientos:**
+**v3.0.0 — Nuevos comportamientos:**
 - `POST /register/` acepta `clinical_data` (JSON de historial clínico) y lo guarda en `ClientProfile.address`.
 - `PATCH /me/` permite actualizar `first_name`, `phone` y `bio`.
 - `POST /cosmiatras/` acepta `password` opcional; si no se envía, genera una contraseña segura con `secrets.token_urlsafe(6)` y la devuelve en la respuesta.

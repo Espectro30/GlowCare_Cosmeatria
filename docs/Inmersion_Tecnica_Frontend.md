@@ -196,7 +196,7 @@ Login → /admin-dashboard → Modal alta cosmiatra → Ver notificaciones → A
 
 ---
 
-## 8. Fix del Bug de Focus en Inputs Numéricos (v3.1.0)
+## 8. Fix del Bug de Focus en Inputs Numéricos (v3.0.0)
 
 **Problema:** Los inputs de referencia bancaria y teléfono perdían el foco del cursor al tipear cada dígito.
 
