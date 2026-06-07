@@ -189,8 +189,7 @@ El sistema visual sigue una paleta de tres colores base definida en `tailwind.co
 | `2.0.0` | 2025-04 | Migración a arquitectura modular + Docker |
 | `2.1.0` | 2026-04 | Fix JWT, seed de servicios, rediseño "Very Green" |
 | `2.2.0` | 2026-05 | Registro Datos Clínicos, Perfil Editable, Navbar blanca/nut/verde, encoding UTF-8 |
-| `2.3.0` | 2026-05 | Citas basadas en Slots (Bloques de Horario), centralización en Credenciales.md, fixes de UI (PaymentFlow focus, AdminDashboard overlap y notificaciones redundantes) |
-| `3.0.0` | 2026-06 | Entrega final: Entorno estabilizado sin Docker/PostgreSQL, fix de lógica de agendamiento y visualización de cupos. |
+| `3.0.0` | 2026-06 | Entrega final: Entorno estabilizado sin Docker/PostgreSQL, fix de lógica de agendamiento, visualización de cupos y exportación de Fichas Clínicas en PDF. |
 
 ---
 

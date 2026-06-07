@@ -226,7 +226,20 @@ Login → /admin-dashboard → Modal alta cosmiatra → Ver notificaciones → A
 
 ---
 
-## 9. Componentes Reutilizables
+## 9. Generación de PDFs en el Cliente (v3.0.0)
+
+Para evitar dependencias pesadas en el servidor y asegurar que el diseño de los documentos coincida exactamente con la interfaz visual, la generación de PDFs clínicos se realiza nativamente en el navegador.
+
+**Funcionamiento (`AdminDashboard.jsx` y `CosmiatraDashboard.jsx`):**
+1. Se realiza un `fetch` autenticado a `/api/citas/historial/paciente/:id/` para obtener los datos clínicos crudos.
+2. La función auxiliar `parseClinicalData` limpia el JSON en caso de que esté anidado.
+3. Se crea una nueva ventana invisible o pop-up mediante `window.open()`.
+4. Se inyecta código HTML estático junto a estilos CSS (que incluyen la misma paleta y tipografía del sitio, y la carga del logo SVG).
+5. Se dispara `window.print()` que abre el diálogo nativo del navegador, permitiendo al usuario guardar el documento directamente como PDF.
+
+---
+
+## 10. Componentes Reutilizables
 
 | Componente | Archivo | Uso |
 |-----------|---------|-----|

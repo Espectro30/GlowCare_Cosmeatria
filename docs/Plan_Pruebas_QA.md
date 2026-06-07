@@ -45,6 +45,7 @@ Este documento es la bitácora de verificación funcional del sistema. Sirve par
 | AD-05 | Correo de cosmiatra duplicado | Intentar registrar con correo existente | Error "Ya existe un usuario con ese correo" |
 | AD-06 | Notificaciones | Hacer clic en el ícono de campana | Dropdown con lista de actividad reciente del sistema |
 | AD-07 | Cierre del modal | Abrir y cerrar el modal de alta | El formulario se resetea al cerrar |
+| AD-08 | Descargar PDF Clínico | En modal del paciente, hacer clic en "Descargar Ficha Clínica" | Se abre la ventana de impresión del navegador con el PDF formateado |
 
 ---
 
@@ -57,6 +58,7 @@ Este documento es la bitácora de verificación funcional del sistema. Sirve par
 | C-03 | Dropdown de pacientes | Abrir modal de nueva cita | Lista de pacientes registrados en el sistema |
 | C-04 | Dropdown de servicios | Abrir modal de nueva cita | Lista de 6 servicios con nombre y precio |
 | C-05 | Marcar cita realizada | Hacer clic en "Marcar Realizada" | Estado de la cita cambia a `completada` |
+| C-06 | Descargar PDF Clínico | Hacer clic en el ícono de descarga junto al paciente en la agenda | Se abre la ventana de impresión del navegador con el historial del paciente |
 
 ---
 
