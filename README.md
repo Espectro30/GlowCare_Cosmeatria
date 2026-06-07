@@ -1,6 +1,6 @@
-# 🌿 GlowCare Cosmiatría `v3.0.0`
+# 🌿 GlowCare Cosmiatría `v3.1.0`
 
-![Version](https://img.shields.io/badge/Version-3.0.0-brightgreen?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-3.1.0-brightgreen?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Estado-Final_Entregado-green?style=for-the-badge)
 ![Django](https://img.shields.io/badge/Django-5.x-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -65,7 +65,7 @@ Acceso: **Frontend** → `http://localhost:3000` | **API** → `http://localhost
 
 ---
 
-## ✨ Funcionalidades v3.0.0
+## ✨ Funcionalidades v3.1.0
 
 ### Módulo Admin
 
@@ -131,7 +131,7 @@ GlowCare_Cosmeatria/
 - **Miguel** — Presentador y Corrector (QA, limitación y ajustes de interfaz)
 
 **Universidad / Materia**: Lenguaje de Programación 2
-**Versión**: `3.0.0` — _"Versión Final Proyecto"_
+**Versión**: `3.1.0` — _"Versión Final Proyecto"_
 
 ---
 

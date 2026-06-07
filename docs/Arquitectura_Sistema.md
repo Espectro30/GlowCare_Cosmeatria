@@ -1,4 +1,4 @@
-# Documentación de Arquitectura del Sistema — GlowCare v3.0.0
+# Documentación de Arquitectura del Sistema — GlowCare v3.1.0
 
 Este documento detalla la ingeniería de software aplicada al proyecto GlowCare, una plataforma SaaS de gestión clínica para consultorios de cosmiatría, diseñada bajo estándares **OWASP Secure by Design** y principios de **Clean Architecture**.
 
@@ -44,7 +44,7 @@ Se adoptó una **Arquitectura Modular** donde cada `app` de Django es un compone
 - Orquesta identidades y roles del sistema.
 - Modelos: `User` (Django built-in) + `ClientProfile` (rol, cédula, teléfono, datos clínicos) + `Cosmiatra` (especialidad, estado activo).
 - Endpoints: `POST /register`, `POST /login`, `GET|PATCH /me/`, `GET /clients/`, `POST /cosmiatras/`, `GET /staff/`.
-- **v3.0.0**: El endpoint `/register` acepta `clinical_data` (JSON con historial clínico del paciente). El endpoint `/me/` ahora acepta `PATCH` para actualizar perfil.
+- **v3.1.0**: El endpoint `/register` acepta `clinical_data` (JSON con historial clínico del paciente). El endpoint `/me/` ahora acepta `PATCH` para actualizar perfil.
 
 ### `apps/servicios`
 - Gestiona el inventario de tratamientos estéticos.
@@ -98,7 +98,7 @@ apiClient.interceptors.request.use(config => {
 
 ---
 
-## 5. Flujo de Autenticación JWT (v3.0.0)
+## 5. Flujo de Autenticación JWT (v3.1.0)
 
 ```
 1. POST /api/usuarios/login/
@@ -124,7 +124,7 @@ apiClient.interceptors.request.use(config => {
 
 ---
 
-## 6. Registro de Paciente en 2 Pasos (v3.0.0)
+## 6. Registro de Paciente en 2 Pasos (v3.1.0)
 
 El flujo de registro fue extendido para capturar datos clínicos críticos:
 
@@ -189,7 +189,7 @@ El sistema visual sigue una paleta de tres colores base definida en `tailwind.co
 | `2.0.0` | 2025-04 | Migración a arquitectura modular + Docker |
 | `2.1.0` | 2026-04 | Fix JWT, seed de servicios, rediseño "Very Green" |
 | `2.2.0` | 2026-05 | Registro Datos Clínicos, Perfil Editable, Navbar blanca/nut/verde, encoding UTF-8 |
-| `3.0.0` | 2026-06 | Entrega final: Entorno estabilizado sin Docker/PostgreSQL, fix de lógica de agendamiento, visualización de cupos y exportación de Fichas Clínicas en PDF. |
+| `3.1.0` | 2026-06 | Entrega final: Entorno estabilizado sin Docker/PostgreSQL, fix de lógica de agendamiento, visualización de cupos y exportación de Fichas Clínicas en PDF. |
 
 ---
 

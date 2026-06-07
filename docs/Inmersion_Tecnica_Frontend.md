@@ -1,4 +1,4 @@
-# Inmersión Técnica — Frontend GlowCare v3.0.0
+# Inmersión Técnica — Frontend GlowCare v3.1.0
 
 Documentación del cliente web construido con **React 19**, **Vite 8** y **TailwindCSS 3** bajo principios de Inversión de Dependencias (DIP) y Diseño Orientado al Componente.
 
@@ -196,7 +196,7 @@ Login → /admin-dashboard → Modal alta cosmiatra → Ver notificaciones → A
 
 ---
 
-## 8. Fix del Bug de Focus en Inputs Numéricos (v3.0.0)
+## 8. Fix del Bug de Focus en Inputs Numéricos (v3.1.0)
 
 **Problema:** Los inputs de referencia bancaria y teléfono perdían el foco del cursor al tipear cada dígito.
 
@@ -226,7 +226,7 @@ Login → /admin-dashboard → Modal alta cosmiatra → Ver notificaciones → A
 
 ---
 
-## 9. Generación de PDFs en el Cliente (v3.0.0)
+## 9. Generación de PDFs en el Cliente (v3.1.0)
 
 Para evitar dependencias pesadas en el servidor y asegurar que el diseño de los documentos coincida exactamente con la interfaz visual, la generación de PDFs clínicos se realiza nativamente en el navegador.
 
@@ -252,7 +252,7 @@ Para evitar dependencias pesadas en el servidor y asegurar que el diseño de los
 
 ---
 
-*GlowCare Frontend v3.0.0 — Experiencia de usuario premium y arquitectura escalable.*
+*GlowCare Frontend v3.1.0 — Experiencia de usuario premium y arquitectura escalable.*
 
 
 ## Actualizaciones Recientes (v2.4.1)
